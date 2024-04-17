@@ -16,6 +16,15 @@ namespace HM_JSON
         public string cc { get; set; }
         public string exchangedate { get; set; }
 
+        public Currency()
+        {
+            ID = COUNTER++;
+            r030 = 0;
+            txt = string.Empty;
+            rate = 0;
+            cc = string.Empty;
+            exchangedate = string.Empty;
+        }
         public Currency(int r030, string txt, float rate, string cc, string exchangedate)
         {
             ID = COUNTER++;
